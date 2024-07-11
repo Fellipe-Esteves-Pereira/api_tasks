@@ -27,7 +27,7 @@ app.post("/create/user", async (request, reply) => {
     },
   })
 
-  return "cadastro feito com sucesso"
+  return reply.status(201).send("User created sucessfully")
 })
 
 app.listen({ port: 3333 }).then(() => {
