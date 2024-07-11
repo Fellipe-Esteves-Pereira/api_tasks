@@ -10,7 +10,7 @@ datasource db {
 model User {
   id           Int      @id @default(autoincrement())
   name         String
-  dateBirthday DateTime @map("data_birthday")
+  dateBirthday String @map("data_birthday")
   login        String @unique
   password     String
 
